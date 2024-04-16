@@ -15,3 +15,8 @@ jobs:
       run: npm ci
     - name: Run Cypress Tests
       uses: cypress-io/github-action@v3
+      steps:
+    - name: Checkout
+        uses: actions/checkout@v4
+    - name: Install Dependencies
+       run: npm install
